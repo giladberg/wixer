@@ -7,8 +7,7 @@ import history from './history';
 function App() {
   return (
     <div >
-     fds
-    Wixerr
+     aa
     </div>
   );
 }
