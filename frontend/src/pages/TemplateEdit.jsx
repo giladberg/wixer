@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Title from '../cmps/Title.jsx'
+import Paragraph from '../cmps/sections/Paragraph.jsx';
 
 export default class TemplateEdit extends Component {
     render() {
         return (
             <div>
                 <h1>Template edit</h1>
-                <Title/>
+                <Paragraph></Paragraph>
             </div>
         )
     }
