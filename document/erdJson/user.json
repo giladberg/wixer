@@ -3,6 +3,5 @@
   "userName": "pukibd@gmail.com",
   "fullName": "puki ben david",
   "password": "tinkerbell",
-  "type":"user",
-  "websites":"c435Hw"
+  "isAdmin":false
 }

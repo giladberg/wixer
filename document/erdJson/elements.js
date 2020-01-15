@@ -1,9 +1,16 @@
 {
   "_id":"cdde4343",
-  "header":{
-        "type":"div",
-        "className":"all uniqe class for desgine"
-  },
+
+//   "header":(styled.div`
+//   font-size: 1.5em;
+//   text-align: center;
+//   color: palevioletred;
+// `),
+  
+//   {
+//         "type":"div",
+//         "className":"all uniqe class for desgine"
+//   },
   "title":{
          "type":"h1",
          "className":"all uniqe class for desgine"
