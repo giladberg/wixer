@@ -1,0 +1,103 @@
+{
+  "_id": "gfdf432",
+  "title": "rent cars",
+  "createdBy":{
+    "_id": "u101",
+    "userName": "pukibd@gmail.com",
+    "fullName": "puki ben david",
+    "password": "tinkerbell",
+    "isAdmin":false
+  },
+  "favicon": "http://mypic.com",
+  "rootCmp": {
+    "style": {
+      "color": "#713333"
+    }
+  },
+    "cmps": [
+      {
+        "elementName": "header",
+        "style": {
+          "width": "500px",
+          "height": "500px",
+          "color": "black"
+        },
+        "childElement": [
+          {
+            "elementName": "title",
+            "content": {
+              "text": "car shop"
+            },
+            "style": {
+              "font-size": "30px",
+              "color": "black"
+            },
+            "isOnEditMode": "false",
+            "location": {
+              "offsetX": "250",
+              "offsetY": "50"
+            }
+          }
+        ],
+     
+        "location": {
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      },
+      {
+        "elementName": "container",
+        "style": {
+          "width": "100%"
+        },
+        "location": {
+          "offsetX": "0",
+          "offsetY": "400"
+        },
+        "childElement": [
+          {
+            "elementName": "card",
+            "style": {
+              "width": "50px",
+              "backgrondColor": "red"
+            },
+            "content": [
+              {
+                "elementName": "title",
+                "isOnEditMode": "false",
+                "content": {
+                  "text": "lamburlini"
+                },
+                "style": {
+                  "font-size": "30px",
+                  "color": "black"
+                }
+              },
+              {
+                "elementName": "image",
+                "isOnEditMode": "false",
+                "content": {
+                  "src": "www.lamburliniImg.com"
+                }
+              },
+              {
+                "elementName": "link",
+                "isOnEditMode": "false",
+                "content": {
+                  "src": "www.lamburliniWeb.com"
+                },
+                "style": {
+                  "font-size": "30px",
+                  "color": "black"
+                }
+              }
+            ],
+            "location": {
+              "offsetX": "100",
+              "offsetY": "500"
+            }
+          }
+        ]
+      }
+    ]
+  }
