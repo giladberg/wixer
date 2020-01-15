@@ -18,7 +18,14 @@ function add() {
           bodyCmp:{
             style:{}
           },
-          cmps:[]
+          cmps:[{
+            cmpName:'title',
+            style:{}
+          },
+          {
+            cmpName:'imageCarousel',
+            style:{}
+          }]
       }
   }
 

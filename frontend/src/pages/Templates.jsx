@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addWebsite} from '../actions/WebsiteActions.js';
-import { Link } from 'react-router-dom';
+
 
  class Templates extends Component {
      onSelectedTemplate=()=>{
@@ -31,4 +31,3 @@ const mapStateToProps = state => {
   };
   
   export default connect(mapStateToProps, mapDispatchToProps)(Templates);
-//<Link to={'/page/edit'}></Link>
