@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from '../cmps/Title.jsx'
+import Title from '../cmps/sections/Title.jsx'
 
 export default class TemplateEdit extends Component {
     render() {
