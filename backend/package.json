@@ -7,7 +7,7 @@
         "server:dev": "NODE_ENV=development nodemon app.js",
         "server:prod": "node app.js"
     },
-    "author": "moshe pinhasi",
+    "author": "Gilad Bergmann,Shmuel Elkis,Tal Mashiah",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^3.0.6",
