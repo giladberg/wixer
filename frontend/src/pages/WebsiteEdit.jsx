@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class TemplateEdit extends Component {
+export default class WebsiteEdit extends Component {
     render() {
         return (
             <div>
