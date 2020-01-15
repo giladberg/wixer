@@ -8,7 +8,7 @@ function App() {
   return (
     <div >
      
-    Wixer
+    Wixerr
     </div>
   );
 }
