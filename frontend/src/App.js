@@ -1,14 +1,28 @@
 import React from 'react';
 import { Router, Switch, Route} from 'react-router';
-import { Link } from 'react-router-dom'
 import history from './history';
 
+import HomePage from './pages/HomePage.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import Templates from './pages/Templates.jsx';
+import TemplateEdit from './pages/TemplateEdit.jsx';
 
 function App() {
   return (
-    <div >
-     aa
-    </div>
+    <main>
+     <Router history={history}>
+       <Switch>
+          <Route component={HomePage} path="/" exact></Route>
+          <Route component={Dashboard} path="/dashboard" exact></Route>
+          <Route component={Templates} path="/templates" exact></Route>
+          <Route component={TemplateEdit} path="/page/edit" ></Route>
+          {/* <Route component={ToyDetails} path="/toys/:_id" exact></Route>
+          <Route component={ToyEdit} path="/toys/edit/:_id" exact></Route>
+          <Route component={ToyEdit} path="/toys/edit" exact></Route>
+          <Route component={NotFound} path="/"></Route> */}
+       </Switch>
+    </Router>
+    </main>
   );
 }
 
