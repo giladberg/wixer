@@ -14,7 +14,11 @@ export default class DynamicCmp extends Component {
             case 'title':
                 return <Title style={this.props.style} />
             case 'imageCarousel':
+<<<<<<< HEAD
                 return <ImageCarousel style={this.props.style} />
+=======
+                return <ImageCarousel style={this.props.style}/>
+>>>>>>> 7b2cf591d69d9682afea908f068ffa832891ecc0
             case 'paragraph':
                 return <Paragraph style={this.props.style} />
             case 'countdown':
@@ -25,6 +29,10 @@ export default class DynamicCmp extends Component {
                 return <LocationMap />
             case 'introduction':
                 return <Introduction />
+<<<<<<< HEAD
+=======
+                
+>>>>>>> 7b2cf591d69d9682afea908f068ffa832891ecc0
             default:
                 return
         }
