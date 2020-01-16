@@ -11,11 +11,10 @@ class WebsiteEdit extends Component {
             <div>
                 <h1>WebsiteEdit edit</h1>
                 {currWebsite.cmps.map((cmp, index) => {
-                    return <DynamicCmp
-                        key={index}
-                        style={cmp.style}
-                        cmpName={cmp.cmpName} />
-
+                    return  <DynamicCmp
+                            key={index}
+                            style={cmp.style}
+                            cmpName={cmp.cmpName} />
                 })}
 
             </div>

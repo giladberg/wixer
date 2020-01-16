@@ -4,7 +4,7 @@ import history from './history';
 
 import HomePage from './pages/HomePage.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import Templates from './pages/Templates.jsx';
+import TemplatePage from './pages/TemplatePage.jsx';
 import WebsiteEdit from './pages/WebsiteEdit.jsx';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
        <Switch>
           <Route component={HomePage} path="/" exact></Route>
           <Route component={Dashboard} path="/dashboard" exact></Route>
-          <Route component={Templates} path="/templates" exact></Route>
+          <Route component={TemplatePage} path="/templates" exact></Route>
           <Route component={WebsiteEdit} path="/page/edit" ></Route>
           {/* <Route component={ToyDetails} path="/toys/:_id" exact></Route>
           <Route component={ToyEdit} path="/toys/edit/:_id" exact></Route>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { addWebsite} from '../actions/WebsiteActions.js';
 
 
- class Templates extends Component {
+ class TemplatePage extends Component {
      onSelectedTemplate=()=>{
         this.props.addWebsite()
         this.props.history.push('/page/edit')
@@ -30,4 +30,4 @@ const mapStateToProps = state => {
     addWebsite
   };
   
-  export default connect(mapStateToProps, mapDispatchToProps)(Templates);
+  export default connect(mapStateToProps, mapDispatchToProps)(TemplatePage);
