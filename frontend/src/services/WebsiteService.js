@@ -33,6 +33,18 @@ function _createWebsite() {
     {
       cmpName: 'countdown',
       style: {}
+    },
+    {
+      cmpName: 'calendar',
+      style: {}
+    },
+    {
+      cmpName: 'locationMap',
+      style: {}
+    },
+    {
+      cmpName: 'introduction',
+      style: {}
     }
     ]
   }

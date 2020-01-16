@@ -3,6 +3,9 @@ import Title from '../cmps/sections/Title.jsx'
 import ImageCaousel from '../cmps/sections/ImageCaousel.jsx';
 import Paragraph from './sections/Paragraph.jsx';
 import Countdown from './sections/CountDown.jsx';
+import DatePicker from './sections/DatePicker.jsx';
+import LocationMap from './sections/LocationMap.jsx';
+import Introduction from './sections/Introduction.jsx';
 
 export default class DynamicCmp extends Component {
 
@@ -15,7 +18,13 @@ export default class DynamicCmp extends Component {
             case 'paragraph':
                 return <Paragraph style={this.props.style} />
             case 'countdown':
-                return <Countdown timeTillDate={'01-16-2020'} timeFormat={"MM-DD-YYYY"} style={this.props.style} />
+                return <Countdown timeTillDate={'01-29-2020'} timeFormat={"MM-DD-YYYY"} style={this.props.style} />
+            case 'calendar':
+                return <DatePicker />
+            case 'locationMap':
+                return <LocationMap />
+            case 'introduction':
+                return <Introduction />
             default:
                 return
         }
