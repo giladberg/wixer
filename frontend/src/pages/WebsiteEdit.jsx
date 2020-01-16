@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import DynamicCmp from '../cmps/DynamicCmp.jsx';
+import ToolBox from '../cmps/tools/CmpBoxMenu.jsx'
 
 class WebsiteEdit extends Component {
     render() {
@@ -15,6 +16,7 @@ class WebsiteEdit extends Component {
                             style={cmp.style}
                             cmpName={cmp.cmpName} />
                 })}
+                <ToolBox/>
 
             </div>
         )
