@@ -10,12 +10,20 @@
 @import "basics/links.scss";
 @import "basics/buttons.scss";
 @import "basics/typography.scss";
+@import "basics/icons.scss";
 
 // Components
 @import "components/title.scss";
-@import "components/cat-card.scss";
 @import "components/paragraph.scss";
 @import "components/datepicker.scss";
 @import "components/countdown.scss";
 @import "components/location-map.scss";
 @import "components/introduction.scss";
+@import "components/imgCarousel.scss";
+@import "components/template-preview.scss";
+@import "components/template-list.scss";
+
+// Pages
+@import "views/home-page.scss";
+@import "views/dashboard.scss";
+@import "components/cmpBoxMenu.scss";
