@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Router, Switch, Route } from 'react-router';
 import { connect } from 'react-redux';
 import DynamicCmp from '../cmps/DynamicCmp.jsx';
 import CmpBoxMenu from '../cmps/tools/CmpBoxMenu.jsx'
@@ -33,7 +32,6 @@ class WebsiteEdit extends Component {
                         cmpName={cmp.cmpName} />
                 })}
                 <CmpBoxMenu onChangeMode={this.onChangeMode} />
-                <AddSection />
                   {this.state.modeCmp && <CurrentToolComp/>}
 
             </div>

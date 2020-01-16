@@ -11,9 +11,13 @@ export default class CmpBoxMenu extends Component {
             items[i].style.top=(15+i*items.length*5)+"%"
             items[i].style.left=(20+i*items.length*5)+"%"
         }
-        document.querySelector('.menu-button').onclick = function (e) {
-            e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
-        }
+        // document.querySelector('.menu-button').onclick = function (e) {
+        //     e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
+        // }
+    }
+    toggleMenu=(event)=>{
+        event.preventDefault();
+        document.querySelector('.circle').classList.toggle('open');
     }
     onChangeMode=(status)=>{
         this.props.onChangeMode(status)
@@ -26,7 +30,9 @@ export default class CmpBoxMenu extends Component {
                     <div className="icon-bin"></div>
                     <div className="icon-plus" onClick={this.onChangeMode.bind(null,'add')}></div>
                 </div>
-                <div className="menu-button icon-plus flex align-center justify-center"></div>
+                <div onClick={this.toggleMenu}
+                className="menu-button icon-plus flex align-center justify-center">
+                </div>
             </nav>
         )
     }
