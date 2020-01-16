@@ -1,45 +1,16 @@
-.home {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    .hello {
-        flex: 1;
+.homePage-container{
+    text-align: center;
+    .HomePage-title{
+        font-family: Helvetica, sans-serif;
+        font-size: 120px;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        margin: 30px;
     }
-}
-
-.logo {
-    padding: rem(20px);
-    width: 140px;
-
-    @include for-normal-layout {
-        width: auto;
+    .HomePage-sub-title{
+        font-family: lobster;
+        font-size: 30px;
+        width: 50%;
+        margin: 31px auto;
     }
-}
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    @include for-normal-layout {
-        height: 86vh;
-    }
-}
-
-#nav {
-    a {
-        background: green;
-
-        &:first-child {
-            background-color: red;
-        }
-
-        body.homepage & {
-            color: gold;
-        }
-    }
-}
-
-body.homepage #nav a {
-    
 }
