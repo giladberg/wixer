@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Title from '../cmps/sections/Title.jsx'
-import ImageCaousel from '../cmps/sections/ImageCaousel.jsx';
 import Paragraph from './sections/Paragraph.jsx';
 import Countdown from './sections/CountDown.jsx';
 import DatePicker from './sections/DatePicker.jsx';
 import LocationMap from './sections/LocationMap.jsx';
 import Introduction from './sections/Introduction.jsx';
+import ImageCarousel from './sections/ImageCarousel.jsx';
 
 export default class DynamicCmp extends Component {
 
@@ -14,7 +14,7 @@ export default class DynamicCmp extends Component {
             case 'title':
                 return <Title style={this.props.style} />
             case 'imageCarousel':
-                return <ImageCaousel style={this.props.style} />
+                return <ImageCarousel style={this.props.style}/>
             case 'paragraph':
                 return <Paragraph style={this.props.style} />
             case 'countdown':
@@ -25,6 +25,7 @@ export default class DynamicCmp extends Component {
                 return <LocationMap />
             case 'introduction':
                 return <Introduction />
+                
             default:
                 return
         }
