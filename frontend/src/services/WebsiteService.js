@@ -23,15 +23,19 @@ function _createWebsite() {
       style: {}
     },
     {
-      cmpName: 'imageCarousel',
-      style: {}
-    },
-    {
       cmpName: 'paragraph',
       style: {}
     },
     {
-      cmpName: 'countdown',
+      cmpName: 'imageGrid',
+      style: {}
+    },
+    {
+      cmpName: 'introduction',
+      style: {}
+    },
+    {
+      cmpName: 'imageCarousel',
       style: {}
     },
     {
@@ -43,9 +47,9 @@ function _createWebsite() {
       style: {}
     },
     {
-      cmpName: 'introduction',
+      cmpName: 'countdown',
       style: {}
-    }
+    },
     ]
   }
 }

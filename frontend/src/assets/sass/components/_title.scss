@@ -1,11 +1,20 @@
-.title-container{
-    text-align: center;
-    
-    .main-title{
-        font-size: rem(60px);
-    }
+.title-container {
+  background-image: url(https://cdn.wallpapersafari.com/90/57/ypuHL1.jpg);
+  background-size: cover;
+  text-align: center;
+  min-height: 400px;
 
-    .sub-title{
-        font-size: rem(40px);
-    }
+  .main-title {
+    font-family: lobster;
+    font-size: rem(60px);
+    color: #f8f8ff;
+    text-shadow: 0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1);
+  }
+
+  .sub-title {
+    color: #f8f8ff;
+    text-shadow: 0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1);
+    font-family: lobster;
+    font-size: rem(40px);
+  }
 }

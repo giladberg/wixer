@@ -1,33 +1,25 @@
 import React, { Component } from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
-export class LocationMap extends Component {
+export default class LocationMap extends Component {
     render() {
-        return (
-            <div className="location-map-container flex row">
-                <div className='map-container'>
-                    <Map style={{ width: '100%', height: '200px', }} google={this.props.google} initialCenter={{
-                        lat: 40.854885,
-                        lng: -88.081807
-                    }} zoom={14}>
+        return <div className="location-map-container section-container flex row">
 
-                        <Marker onClick={this.onMarkerClick}
-                            name={'Current location'} />
-                    </Map>
-                </div>
-
-                <div className="location-details flex column justify-center">
-                    <span>HaBonim St 4</span>
-                    <span>Habonim St4</span>
-                    <span>Ramat Gan</span>
-                    <button>Take me there!</button>
-                </div>
+            <div className="map-container">
+                <iframe width="400" height="400" id="gmap_canvas" src={`https://maps.google.com/maps?q=${'israel netanya nordo'}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight="0"
+                    marginWidth="0">
+                </iframe>
             </div>
-        );
+
+            <div className="location-details flex column justify-center">
+                <span className="location-street">Nordo 17 St</span>
+                <span className="location-city">Netanya</span>
+                <span className="location-country">Israel</span>
+            </div>
+
+        </div>
     }
 }
 
-export default GoogleApiWrapper({
-    style: { width: 0, height: 0 },
-    apiKey: ('AIzaSyBEtjYeW53Az1V2NfD1w5i99iZM3r6Dmhc')
-})(LocationMap)
