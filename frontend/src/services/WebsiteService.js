@@ -5,32 +5,41 @@ import UtilsService from './UtilsService.js'
 
 
 function add() {
-   // const addedReview  = await HttpService.post(`review`, review);
-    return Promise.resolve(_createWebsite())
-  }
+  // const addedReview  = await HttpService.post(`review`, review);
+  return Promise.resolve(_createWebsite())
+}
 
-  function _createWebsite(){
-      return{
-          '_id':UtilsService.makeRandomId(),
-          createtBy:{},
-          createdAt:new Date(),
-          title:'Bachelor Party',
-          bodyCmp:{
-            style:{}
-          },
-          cmps:[{
-            cmpName:'title',
-            style:{}
-          },
-          {
-            cmpName:'imageCarousel',
-            style:{}
-          }]
-      }
+function _createWebsite() {
+  return {
+    '_id': UtilsService.makeRandomId(),
+    createtBy: {},
+    createdAt: new Date(),
+    title: 'Bachelor Party',
+    bodyCmp: {
+      style: {}
+    },
+    cmps: [{
+      cmpName: 'title',
+      style: {}
+    },
+    {
+      cmpName: 'imageCarousel',
+      style: {}
+    },
+    {
+      cmpName: 'paragraph',
+      style: {}
+    },
+    {
+      cmpName: 'countdown',
+      style: {}
+    }
+    ]
   }
+}
 
 
 
 export default {
-    add
+  add
 };
