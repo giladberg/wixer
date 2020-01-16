@@ -7,7 +7,7 @@ import TemplateList from '../cmps/TemplateList.jsx'
 
 class TemplatePage extends Component {
   state = {
-    templates: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    templates: [1, 2, 3, 4, 5, 6, 7, 8, 9,10,11]
   }
   onSelectedTemplate = () => {
     this.props.addWebsite()
@@ -16,9 +16,8 @@ class TemplatePage extends Component {
   render() {
     return (
       <div>
-        <h1>Templates</h1>
+        <div className='template-page-title'>Pick your template</div>
         <TemplateList templates={this.state.templates} blankTemplate={this.onSelectedTemplate}/>
-        
       </div>
     )
   }

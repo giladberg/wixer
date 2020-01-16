@@ -25,7 +25,6 @@ class WebsiteEdit extends Component {
 
         return (
             <div>
-                <h1>Website edit</h1>
                 {currWebsite.cmps.map((cmp, index) => {
                     return <DynamicCmp
                         key={index}
