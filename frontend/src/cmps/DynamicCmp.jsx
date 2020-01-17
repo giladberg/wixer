@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Title from '../cmps/sections/Title.jsx'
 import Paragraph from './sections/Paragraph.jsx';
-import Countdown from './sections/Countdown.jsx';
+import Countdown from './sections/CountDown.jsx';
 import LocationMap from './sections/LocationMap.jsx';
 import Introduction from './sections/Introduction.jsx';
 import ImageCarousel from './sections/ImageCarousel.jsx';
