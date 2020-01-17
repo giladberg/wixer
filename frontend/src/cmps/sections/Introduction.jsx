@@ -2,19 +2,17 @@ import React from 'react';
 
 export default function Introduction(props) {
 
-    return <div className='introduction-container flex'>
+    return <div className='introduction-container section-container flex'>
         <div className="bachelor-section flex column justify-center">
-            <span>Bachelor</span>
-            <img src="https://image.shutterstock.com/z/stock-vector-wedding-couple-pictogram-man-with-shackle-and-iron-ball-369672824.jpg"></img>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas id placeat itaque nemo maxime dolor tempore unde dolorum mollitia incidunt. Enim harum voluptatum at officiis suscipit laborum quam ducimus reprehenderit!</p>
+            <img alt="" src="https://i2.wp.com/www.mancrates.com/blog/wp-content/uploads/2017/09/bachelor-party.jpg?w=620&ssl=1"></img>
+            <p suppressContentEditableWarning={true}  contentEditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas id placeat itaque nemo.</p>
         </div>
 
-        <img className="introduction-main-img" src="https://www.yatatu.com/wp-content/uploads/2019/07/bodas-despedida-soltero-game-over-3-300x400.jpg"></img>
+        <img  alt="" className="introduction-main-img" src="https://image.spreadshirtmedia.com/content/f_png,f_auto,c_mpad,h_400,w_400,q_70/aum/na/designs/1010443533,width=300,height=300/beer-t-shirts.png"></img>
 
         <div className="bachelorette-section flex column justify-center">
-            <span>Bachelorette</span>
-            <img src="https://image.shutterstock.com/image-vector/wedding-loading-engaged-600w-369672746.jpg"></img>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit, facere architecto rem provident reprehenderit corrupti beatae pariatur maxime. Corporis aliquam, magnam recusandae atque nulla explicabo esse excepturi aspernatur error.</p>
+            <img alt="" src="https://miro.medium.com/max/1008/0*bdE5plmbY3f7znF7.jpg"></img>
+            <p suppressContentEditableWarning={true} contentEditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit</p>
 
         </div>
 

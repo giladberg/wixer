@@ -37,48 +37,21 @@ export default class Countdown extends React.Component {
         const { days, hours, minutes, seconds } = this.state;
 
         return (
-            <div className="countdown-wrapper">
+            <div className="countdown-wrapper section-container flex justify-center align-center">
                 <div className="flip-clock">
 
                     <span className="flip-clock__piece flip">
                         <span className="flip-clock__card flip-card">
-
                             <b className="flip-card__top">
                                 {days}
                             </b>
-
-                            <b className="flip-card__bottom">
-                                {days}
-                            </b>
-
-                            <b className="flip-card__back">
-                                {days}
-                            </b>
-
-                            <b className="flip-card__back-bottom">
-                                {days}
-                            </b>
-
                         </span>
                         <span className="flip-clock__slot">days</span>
                     </span>
 
                     <span className="flip-clock__piece flip">
                         <span className="flip-clock__card flip-card">
-
                             <b className="flip-card__top">
-                                {hours}
-                            </b>
-
-                            <b className="flip-card__bottom">
-                                {hours}
-                            </b>
-
-                            <b className="flip-card__back">
-                                {hours}
-                            </b>
-
-                            <b className="flip-card__back-bottom">
                                 {hours}
                             </b>
                         </span>
@@ -87,20 +60,7 @@ export default class Countdown extends React.Component {
 
                     <span className="flip-clock__piece flip">
                         <span className="flip-clock__card flip-card">
-
                             <b className="flip-card__top">
-                                {minutes}
-                            </b>
-
-                            <b className="flip-card__bottom">
-                                {minutes}
-                            </b>
-
-                            <b className="flip-card__back">
-                                {minutes}
-                            </b>
-
-                            <b className="flip-card__back-bottom">
                                 {minutes}
                             </b>
                         </span>
@@ -109,25 +69,11 @@ export default class Countdown extends React.Component {
 
                     <span className="flip-clock__piece flip">
                         <span className="flip-clock__card flip-card">
-
                             <b className="flip-card__top">
                                 {seconds}
                             </b>
-
-                            <b className="flip-card__bottom">
-                                {seconds}
-                            </b>
-
-                            <b className="flip-card__back">
-                                {seconds}
-                            </b>
-
-                            <b className="flip-card__back-bottom">
-                                {seconds}
-                            </b>
-
                         </span>
-                        <span className="flip-clock__slot">seconds</span>
+                        <div className="flip-clock__slot">seconds</div>
                     </span>
 
                 </div>

@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import DynamicCmp from '../DynamicCmp.jsx'
+=======
+// import DynamicCmp from '../DynamicCmp.jsx'
+>>>>>>> shmuel2
 export default class SectionToSelectList extends Component {
     state={sections:['calendar','countdown','introduction']}
     render() {
