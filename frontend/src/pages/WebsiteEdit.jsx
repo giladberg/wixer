@@ -12,7 +12,9 @@ const mode = {
 };
 
 Object.freeze(mode);
+
 class WebsiteEdit extends Component {
+
     state = {
         modeCmp: mode.noMode,
         currCmpToMove: null,
@@ -25,11 +27,15 @@ class WebsiteEdit extends Component {
             let y = event.nativeEvent.offsetY
             let pos = { x, y }
             this.setState({ currCmpToMovePos: pos })
+            console.log(this.state.currCmpToMovePos)
+            console.log(x)
+            console.log(y)
         }
     }
 
     setCmpToMove = (cmp) => {
         this.setState({ currCmpToMove: cmp })
+        console.log(cmp)
     }
 
     onChangeMode = (status) => {
@@ -69,6 +75,7 @@ class WebsiteEdit extends Component {
         )
     }
 }
+
 const mapStateToProps = state => {
     return {
         // reviews: state.review.reviews,
