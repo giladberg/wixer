@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 
 class AddSection extends Component {
     state={
@@ -38,4 +40,4 @@ const mapDispatchToProps = {
 
 };
 
-export default connect(mapStateToProps, null)(WebsiteEdit);
+export default connect(mapStateToProps, null)(AddSection);

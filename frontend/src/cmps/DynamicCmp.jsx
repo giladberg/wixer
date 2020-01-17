@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Title from '../cmps/sections/Title.jsx'
 import Paragraph from './sections/Paragraph.jsx';
-import Countdown from './sections/Countdown.jsx';
+import Countdown from './sections/CountDown.jsx';
 // import DatePicker from './sections/DatePicker.jsx';
 import LocationMap from './sections/LocationMap.jsx';
 import Introduction from './sections/Introduction.jsx';
-import ImageCarousel from './sections/ImageCarousel.jsx';
+//import ImageCarousel from './sections/ImageCarousel.jsx';
 import ImageGrid from './sections/ImageGrid.jsx';
 
 export default class DynamicCmp extends Component {
