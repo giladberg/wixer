@@ -1,4 +1,5 @@
-import WebsiteService from '../services/WebsiteService'
+import WebsiteService from '../services/WebsiteService';
+
 function _addWebsite(website) {
     return {
         type: 'WEBSITE_ADD',
@@ -11,6 +12,19 @@ function _setWebsite(website) {
         website
     };
 }
+
+function _clearWebsite() {
+    return {
+        type: 'WEBSITE_CLEAR',
+    };
+}
+
+function _changeBg() {
+    return {
+        type: 'SET_BG',
+    }
+}
+
 export function addWebsite() {
     return async dispatch => {
         try {
@@ -21,4 +35,26 @@ export function addWebsite() {
             console.log('WebsiteActions: err in addWebsite', err);
         }
     };
+}
+
+
+export function clearCmps() {
+    return async dispatch => {
+        try {
+            //  await WebsiteService.clear();
+            dispatch(_clearWebsite());
+        } catch (err) {
+            console.log('WebsiteActions:err in clearCmps', err);
+        }
+    }
+}
+
+export function changeBg() {
+    return async dispatch => {
+        try {
+            dispatch(_changeBg());
+        } catch (err) {
+            console.log('WebsiteActions:err in clearCmps', err);
+        }
+    }
 }

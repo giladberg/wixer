@@ -15,7 +15,7 @@ class TemplatePage extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='header-padding'>
         <div className='template-page-title'>Pick your template</div>
         <TemplateList templates={this.state.templates} blankTemplate={this.onSelectedTemplate}/>
       </div>

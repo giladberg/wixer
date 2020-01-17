@@ -5,7 +5,7 @@ export default class LocationMap extends Component {
         return <div className="location-map-container section-container flex row">
 
             <div className="map-container">
-                <iframe width="400" height="400" id="gmap_canvas" src={`https://maps.google.com/maps?q=${'israel netanya nordo'}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                <iframe title="google-map" width="400" height="400" id="gmap_canvas" src={`https://maps.google.com/maps?q=${'israel netanya nordo'}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
                     frameBorder="0"
                     scrolling="no"
                     marginHeight="0"

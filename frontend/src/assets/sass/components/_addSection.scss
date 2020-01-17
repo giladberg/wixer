@@ -1,0 +1,21 @@
+.addSection-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: #303d75de;
+  z-index: 10;
+  border-left: 1px solid #c3c3c3;
+  width: 400px;
+  padding-top: 70px;
+  //transform: translate(-100%, 0);
+  //transition: transform 0.6s;
+  & p{
+      color:white;
+      font-size:rem(25px);
+      cursor: pointer;
+  }
+}
+.setAddSection-container{
+    transform: translate(0, 0) !important;
+}

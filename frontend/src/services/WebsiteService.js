@@ -1,4 +1,4 @@
-import HttpService from './HttpService';
+// import HttpService from './HttpService';
 import UtilsService from './UtilsService.js'
 
 
@@ -9,6 +9,9 @@ function add() {
   return Promise.resolve(_createWebsite())
 }
 
+
+
+
 function _createWebsite() {
   return {
     '_id': UtilsService.makeRandomId(),
@@ -16,7 +19,10 @@ function _createWebsite() {
     createdAt: new Date(),
     title: 'Bachelor Party',
     bodyCmp: {
-      style: {}
+      style: {
+        bgImgUrl: 'http://2.bp.blogspot.com/-8vFNyvVrAOk/UvOE4F-KK8I/AAAAAAAABkw/vS1A48o5RRU/s1600/very+beautiful+hd+wallpapers_1.jpg',
+        bgSize: 'cover'
+      }
     },
     cmps: [{
       cmpName: 'title',
@@ -32,14 +38,6 @@ function _createWebsite() {
     },
     {
       cmpName: 'introduction',
-      style: {}
-    },
-    {
-      cmpName: 'imageCarousel',
-      style: {}
-    },
-    {
-      cmpName: 'calendar',
       style: {}
     },
     {
@@ -59,3 +57,11 @@ function _createWebsite() {
 export default {
   add
 };
+
+
+
+// {
+//   cmpName: 'title',
+//   style: {position:'absolute',top:'70%',left:'80%'},
+//   id:UtilsService.makeRandomId()
+// }
