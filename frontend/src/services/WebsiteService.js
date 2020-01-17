@@ -26,16 +26,6 @@ function _createWebsite() {
     },
     cmps: [{
       cmpName: 'title',
-<<<<<<< HEAD
-      style: {position:'absolute',top:'50%',left:'50%'},
-      id:UtilsService.makeRandomId()
-    },
-    {
-      cmpName: 'title',
-      style: {position:'absolute',top:'70%',left:'80%'},
-      id:UtilsService.makeRandomId()
-    }
-=======
       style: {}
     },
     {
@@ -58,7 +48,6 @@ function _createWebsite() {
       cmpName: 'countdown',
       style: {}
     },
->>>>>>> shmuel2
     ]
   }
 }

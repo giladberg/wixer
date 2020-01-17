@@ -16,24 +16,6 @@ class WebsiteEdit extends Component {
     state = {
         modeCmp: mode.noMode,
         currCmpToMove: null,
-<<<<<<< HEAD
-        currCmpToMovePos:null
-    }
-    onMoveElement=(event)=> {
-         if (this.state.currCmpToMove) {
-             let x=event.nativeEvent.offsetX
-             let y=event.nativeEvent.offsetY
-             let pos={x,y}
-             this.setState({currCmpToMovePos:pos})
-             console.log(this.state.currCmpToMovePos)
-             console.log(x)
-             console.log(y)
-         }
-    }
-    setCmpToMove=(cmp)=>{
-        this.setState({currCmpToMove:cmp})
-        console.log(cmp)
-=======
         currCmpToMovePos: null
     }
 
@@ -48,7 +30,6 @@ class WebsiteEdit extends Component {
 
     setCmpToMove = (cmp) => {
         this.setState({ currCmpToMove: cmp })
->>>>>>> shmuel2
     }
 
     onChangeMode = (status) => {
@@ -72,26 +53,15 @@ class WebsiteEdit extends Component {
         if (!currWebsite) return <div>Loading...</div>
 
         return (
-<<<<<<< HEAD
-            
-            <div className='header-padding'
-                onMouseMove={this.onMoveElement}
-            >
-=======
             <div className='header-padding  website-container'
                 onMouseMove={this.onMoveElement}>
->>>>>>> shmuel2
                 {currWebsite.cmps.map((cmp, index) => {
                     return <DynamicCmp
                         key={index}
                         setCmpToMove={this.setCmpToMove}
                         cmp={cmp} />
                 })}
-<<<<<<< HEAD
-                <CmpBoxMenu onChangeMode={this.onChangeMode} />
-=======
                 <CmpBoxMenu onChangeMode={this.onChangeMode} onClearComp={this.onClearComp} onSetBg={this.onSetBg} />
->>>>>>> shmuel2
                 {this.state.modeCmp &&
                     <CurrentToolComp onChangeMode={this.onChangeMode} />}
 
