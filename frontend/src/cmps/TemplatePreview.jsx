@@ -5,7 +5,7 @@ export default function TemplatePreview(props) {
 
     return <li className='template-img-container'>
         <Link to={`/page/edit`}>
-            <img src={require(`../assets/images/demi-data-templates/${props.template}.jpg`)} />
+            <img alt="" src={require(`../assets/images/demi-data-templates/${props.template}.jpg`)} />
         </Link>
     </li >
 }
