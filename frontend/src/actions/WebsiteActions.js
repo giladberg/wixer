@@ -22,3 +22,20 @@ export function addWebsite() {
         }
     };
 }
+
+// export function clearWebsiteCmps() {
+//     return async dispatch => {
+//         try {
+//             await WebsiteService.clearWebsiteCmps();
+//             dispatch(_clearWebsiteCmps());
+//         } catch (err) {
+//             console.log('WebsiteActions: err in clearWebsiteCmps', err);
+//         }
+//     };
+// }
+
+// function _clearWebsiteCmps() {
+//     return {
+//         type: 'WEBSITE_CMPS_REMOVE'
+//     };
+// }

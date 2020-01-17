@@ -20,14 +20,37 @@ function _createWebsite() {
     },
     cmps: [{
       cmpName: 'title',
-      style: {position:'absolute',top:'50%',left:'50%'},
-      id:UtilsService.makeRandomId()
-    },
-    {
-      cmpName: 'title',
-      style: {position:'absolute',top:'70%',left:'80%'},
-      id:UtilsService.makeRandomId()
+      style: {}
     }
+    // },
+    // {
+    //   cmpName: 'paragraph',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'imageGrid',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'introduction',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'imageCarousel',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'calendar',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'locationMap',
+    //   style: {}
+    // },
+    // {
+    //   cmpName: 'countdown',
+    //   style: {}
+    // },
     ]
   }
 }
@@ -37,3 +60,15 @@ function _createWebsite() {
 export default {
   add
 };
+
+
+
+
+// style: {position:'absolute',top:'50%',left:'50%'},
+// id:UtilsService.makeRandomId()
+// },
+// {
+// cmpName: 'title',
+// style: {position:'absolute',top:'70%',left:'80%'},
+// id:UtilsService.makeRandomId()
+// }

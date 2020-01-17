@@ -1,20 +1,41 @@
 import React, { Component } from 'react'
-import SectionSelectList from './SectionToSelectList.jsx'
-export default class AddSection extends Component {
+
+class AddSection extends Component {
+    state={
+        sections:['title','paragraph','imageGrid','introduction','imageCarousel','calendar','locationMap','countdown']
+    }
+
     close=()=>{
         this.props.onChangeMode('noMode')
     }
+
+    onAddSection = (cpmName) => {
+        console.log(cpmName)
+    }
+
     render() {
         return (
-            <div 
-             className="addSection-container flex column align-center">
-                 <button onClick={this.close}>Close</button>
-                <p>Add text</p>
-                <p>Add shape</p>
-                <p>Add section</p>
-                <p>Add sticker</p>
-                 <SectionSelectList/> 
+            <div className="addSection-container flex column align-center">
+                <button onClick={this.close}>X</button>
+                {this.state.sections.map((cpmName,i) => {
+                return <div key={i} onClick={()=>this.onAddSection(cpmName)}>{cpmName}</div>
+                })}
             </div>
-        )
-    }
+
+        )}
 }
+
+const mapStateToProps = state => {
+    return {
+        // reviews: state.review.reviews,
+        // users: state.user.users,
+        // loggedInUser: state.user.loggedInUser,
+        currWebsite: state.website.selectedWebsite
+    };
+};
+
+const mapDispatchToProps = {
+
+};
+
+export default connect(mapStateToProps, null)(WebsiteEdit);
