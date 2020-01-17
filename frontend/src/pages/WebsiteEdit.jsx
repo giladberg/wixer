@@ -24,7 +24,7 @@ class WebsiteEdit extends Component {
         if (!currWebsite) return <div>Loading...</div>
 
         return (
-            <div>
+            <div className='header-padding'>
                 {currWebsite.cmps.map((cmp, index) => {
                     return <DynamicCmp
                         key={index}

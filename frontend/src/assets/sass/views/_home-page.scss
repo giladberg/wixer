@@ -1,13 +1,22 @@
 .homePage-container{
     text-align: center;
+
+    .bg-image{
+        background-image: url("../../images/home-page-bg.jpg");
+        min-height: 600px; 
+    }
+
+    .bg-img-container {
+        position: relative;
+    }
+
     .HomePage-title{
         font-family: Helvetica, sans-serif;
-        font-size: 85px;
+        font-size: 57px;
         letter-spacing: 2px;
-        line-height: 1.2;
-        margin: 30px;
-        width: 75%;
-        margin: auto;
+        position: absolute;
+        bottom: 10px;
+        left: 28px;
     }
     .HomePage-sub-title{
         font-family: lobster;
