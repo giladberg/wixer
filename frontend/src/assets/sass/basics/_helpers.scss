@@ -28,6 +28,9 @@
     &.row{
         flex-direction: row;
     }
+    &.justify-between {
+        justify-content: space-between;
+    }
 }
 
 // Media helpers

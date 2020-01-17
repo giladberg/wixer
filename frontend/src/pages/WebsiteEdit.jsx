@@ -11,11 +11,28 @@ const mode = {
 Object.freeze(mode);
 class WebsiteEdit extends Component {
     state = {
-        modeCmp: mode.noMode
+        modeCmp: mode.noMode,
+        currCmpToMove: null,
+        currCmpToMovePos:null
+    }
+    onMoveElement=(event)=> {
+         if (this.state.currCmpToMove) {
+             let x=event.nativeEvent.offsetX
+             let y=event.nativeEvent.offsetY
+             let pos={x,y}
+             this.setState({currCmpToMovePos:pos})
+             console.log(this.state.currCmpToMovePos)
+             console.log(x)
+             console.log(y)
+         }
+    }
+    setCmpToMove=(cmp)=>{
+        this.setState({currCmpToMove:cmp})
+        console.log(cmp)
     }
 
     onChangeMode = (status) => {
-       this.setState({modeCmp:mode[status]})
+        this.setState({ modeCmp: mode[status] })
     }
     render() {
         const CurrentToolComp = this.state.modeCmp;
@@ -23,16 +40,18 @@ class WebsiteEdit extends Component {
         if (!currWebsite) return <div>Loading...</div>
 
         return (
-            <div>
-                <h1>Website edit</h1>
+            <div
+                onMouseMove={this.onMoveElement}
+            >
                 {currWebsite.cmps.map((cmp, index) => {
                     return <DynamicCmp
                         key={index}
-                        style={cmp.style}
-                        cmpName={cmp.cmpName} />
+                        setCmpToMove={this.setCmpToMove}
+                        cmp={cmp} />
                 })}
                 <CmpBoxMenu onChangeMode={this.onChangeMode} />
-                  {this.state.modeCmp && <CurrentToolComp/>}
+                {this.state.modeCmp &&
+                    <CurrentToolComp onChangeMode={this.onChangeMode} />}
 
             </div>
         )

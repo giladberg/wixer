@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Switch, Route} from 'react-router';
 import history from './history';
 
+import Header from './cmps/Header.jsx'
 import HomePage from './pages/HomePage.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import TemplatePage from './pages/TemplatePage.jsx';
@@ -11,6 +12,7 @@ function App() {
   return (
     <main>
      <Router history={history}>
+     <Header></Header>
        <Switch>
           <Route component={HomePage} path="/" exact></Route>
           <Route component={Dashboard} path="/dashboard" exact></Route>

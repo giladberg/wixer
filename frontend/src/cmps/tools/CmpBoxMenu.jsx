@@ -16,11 +16,12 @@ export default class CmpBoxMenu extends Component {
         // }
     }
     toggleMenu=(event)=>{
-        event.preventDefault();
+       // event.preventDefault();
         document.querySelector('.circle').classList.toggle('open');
     }
     onChangeMode=(status)=>{
         this.props.onChangeMode(status)
+        this.toggleMenu()
     }
     render() {
         return (

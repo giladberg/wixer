@@ -8,17 +8,23 @@ import Introduction from './sections/Introduction.jsx';
 import ImageCarousel from './sections/ImageCarousel.jsx';
 
 export default class DynamicCmp extends Component {
+    onClickElement=(cmp)=>{
+        this.props.setCmpToMove(cmp)
+    }
+    onLeaveElement=()=>{
+        this.props.setCmpToMove(null) 
+    }
 
     DynamicCmp = () => {
-        switch (this.props.cmpName) {
+        switch (this.props.cmp.cmpName) {
             case 'title':
-                return <Title style={this.props.style} />
+                return <Title style={this.props.cmp.style} />
             case 'imageCarousel':
-                return <ImageCarousel style={this.props.style}/>
+                return <ImageCarousel style={this.props.cmp.style}/>
             case 'paragraph':
-                return <Paragraph style={this.props.style} />
+                return <Paragraph style={this.props.cmp.style} />
             case 'countdown':
-                return <Countdown timeTillDate={'01-29-2020'} timeFormat={"MM-DD-YYYY"} style={this.props.style} />
+                return <Countdown timeTillDate={'01-29-2020'} timeFormat={"MM-DD-YYYY"} style={this.props.cmp.style} />
             case 'calendar':
                 return <DatePicker />
             case 'locationMap':
@@ -33,9 +39,11 @@ export default class DynamicCmp extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <span 
+            onMouseUp={this.onLeaveElement}
+            onMouseDown={this.onClickElement.bind(null,this.props.cmp)}>
                 {this.DynamicCmp()}
-            </React.Fragment>
+            </span>
         )
     }
 }

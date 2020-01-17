@@ -20,31 +20,13 @@ function _createWebsite() {
     },
     cmps: [{
       cmpName: 'title',
-      style: {}
+      style: {position:'absolute',top:'50%',left:'50%'},
+      id:UtilsService.makeRandomId()
     },
     {
-      cmpName: 'imageCarousel',
-      style: {}
-    },
-    {
-      cmpName: 'paragraph',
-      style: {}
-    },
-    {
-      cmpName: 'countdown',
-      style: {}
-    },
-    {
-      cmpName: 'calendar',
-      style: {}
-    },
-    {
-      cmpName: 'locationMap',
-      style: {}
-    },
-    {
-      cmpName: 'introduction',
-      style: {}
+      cmpName: 'title',
+      style: {position:'absolute',top:'70%',left:'80%'},
+      id:UtilsService.makeRandomId()
     }
     ]
   }

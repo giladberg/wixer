@@ -1,0 +1,11 @@
+.sectionToSelectList {
+  width: 90%;
+  max-height: 56%;
+  overflow-y: scroll;
+}
+.sectionToSelectPreview {
+    border:1px solid black;
+    font-size: rem(10px) !important;
+  max-width: 400px !important;
+  //max-height: 400px !important;
+}
